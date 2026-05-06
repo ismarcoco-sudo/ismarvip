@@ -1,0 +1,1007 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+    <!-- Meta Tags Esenciales para SEO -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0f172a">
+    
+    <!-- Title & Description -->
+    <title>Despedida de Soltero en Cuba | Ismar VIP - La Experiencia Definitiva</title>
+    <meta name="description" content="Organiza la mejor despedida de soltero en Cuba. Paquetes VIP, transporte privado, alojamiento de lujo y fiestas exclusivas. Contacta con Ismar directamente.">
+    
+    <!-- Keywords -->
+    <meta name="keywords" content="despedida de soltero Cuba, La Habana VIP, viajes solteros Cuba, fiestas La Habana, Ismar VIP, paquetes despedida Cuba">
+    
+    <!-- Author & Copyright -->
+    <meta name="author" content="Ismar VIP">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Despedida de Soltero en Cuba | Ismar VIP">
+    <meta property="og:description" content="La experiencia más exclusiva en La Habana para tu grupo de amigos. Todo incluido y logística impecable.">
+    <meta property="og:site_name" content="Ismar VIP">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        :root {
+            --primary: #f59e0b;
+            --primary-light: #fbbf24;
+            --primary-dark: #d97706;
+            --secondary: #0ea5e9;
+            --accent: #f43f5e;
+            --dark: #0f172a;
+            --darker: #020617;
+            --light: #f8fafc;
+            --gray: #94a3b8;
+            --glass: rgba(15, 23, 42, 0.7);
+            --glass-border: rgba(255, 255, 255, 0.1);
+            --transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: var(--darker);
+            color: var(--light);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4 {
+            font-family: 'Outfit', sans-serif;
+            font-weight: 700;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* --- Animations --- */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+
+        .reveal {
+            animation: fadeIn 0.8s ease forwards;
+        }
+
+        /* --- Navigation --- */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            z-index: 1000;
+            transition: var(--transition);
+            background: transparent;
+        }
+
+        nav.scrolled {
+            background: var(--glass);
+            backdrop-filter: blur(15px);
+            border-bottom: 1px solid var(--glass-border);
+            height: 70px;
+        }
+
+        nav .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--primary);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo span {
+            color: var(--light);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--light);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: var(--transition);
+            opacity: 0.8;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary);
+            opacity: 1;
+        }
+
+        .nav-cta {
+            background: var(--primary);
+            color: var(--darker);
+            padding: 0.6rem 1.2rem;
+            border-radius: 50px;
+            font-weight: 700;
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .nav-cta:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px rgba(245, 158, 11, 0.4);
+        }
+
+        /* --- Hero Section --- */
+        .hero {
+            position: relative;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+            padding-top: 80px;
+        }
+
+        .hero-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+
+        .hero-bg img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: brightness(0.4);
+        }
+
+        .hero-bg::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 30%;
+            background: linear-gradient(to top, var(--darker), transparent);
+        }
+
+        .hero-content {
+            max-width: 700px;
+        }
+
+        .hero-tag {
+            display: inline-block;
+            background: rgba(245, 158, 11, 0.2);
+            color: var(--primary-light);
+            padding: 0.4rem 1rem;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 1.5rem;
+            border: 1px solid rgba(245, 158, 11, 0.3);
+        }
+
+        .hero h1 {
+            font-size: clamp(2.5rem, 6vw, 4.5rem);
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(to right, #fff, var(--primary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: var(--gray);
+            margin-bottom: 2.5rem;
+            max-width: 600px;
+        }
+
+        .hero-btns {
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 1rem 2.5rem;
+            border-radius: 50px;
+            font-weight: 700;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            transition: var(--transition);
+        }
+
+        .btn-primary {
+            background: var(--primary);
+            color: var(--darker);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(245, 158, 11, 0.4);
+        }
+
+        .btn-outline {
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            color: var(--light);
+        }
+
+        .btn-outline:hover {
+            background: rgba(255, 255, 255, 0.05);
+            border-color: var(--light);
+        }
+
+        /* --- Stats --- */
+        .stats {
+            display: flex;
+            gap: 3rem;
+            margin-top: 4rem;
+        }
+
+        .stat-item h3 {
+            font-size: 2rem;
+            color: var(--light);
+        }
+
+        .stat-item p {
+            font-size: 0.9rem;
+            color: var(--gray);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* --- Sections --- */
+        section {
+            padding: 100px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .section-title h2 {
+            font-size: clamp(2rem, 4vw, 3rem);
+            margin-bottom: 1rem;
+        }
+
+        .section-title p {
+            color: var(--gray);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* --- Services Grid --- */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .service-card {
+            background: var(--glass);
+            border: 1px solid var(--glass-border);
+            padding: 2.5rem;
+            border-radius: 24px;
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--primary);
+            background: rgba(15, 23, 42, 0.9);
+        }
+
+        .service-icon {
+            width: 60px;
+            height: 60px;
+            background: rgba(245, 158, 11, 0.1);
+            color: var(--primary);
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .service-card h3 {
+            margin-bottom: 1rem;
+            font-size: 1.4rem;
+        }
+
+        .service-card p {
+            color: var(--gray);
+            font-size: 0.95rem;
+        }
+
+        /* --- Featured Content --- */
+        .featured-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+            margin-bottom: 8rem;
+        }
+
+        .featured-row:nth-child(even) {
+            direction: rtl;
+        }
+
+        .featured-row:nth-child(even) .featured-text {
+            direction: ltr;
+        }
+
+        .featured-img {
+            border-radius: 32px;
+            overflow: hidden;
+            box-shadow: 0 30px 60px rgba(0,0,0,0.5);
+            position: relative;
+        }
+
+        .featured-img img {
+            width: 100%;
+            display: block;
+            transition: var(--transition);
+        }
+
+        .featured-img:hover img {
+            transform: scale(1.05);
+        }
+
+        .featured-text h3 {
+            font-size: 2.2rem;
+            margin-bottom: 1.5rem;
+            color: var(--primary-light);
+        }
+
+        .featured-text p {
+            color: var(--gray);
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+        }
+
+        .feature-list {
+            list-style: none;
+        }
+
+        .feature-list li {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+
+        .feature-list i {
+            color: var(--primary);
+        }
+
+        /* --- Package Section --- */
+        .package-section {
+            background: linear-gradient(to bottom, var(--darker), #0f172a, var(--darker));
+        }
+
+        .package-card {
+            background: linear-gradient(135deg, rgba(255,255,255,0.05), rgba(255,255,255,0.01));
+            border: 1px solid var(--glass-border);
+            border-radius: 40px;
+            padding: 4rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 3rem;
+            backdrop-filter: blur(20px);
+        }
+
+        .package-info {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .price-tag {
+            font-size: 3rem;
+            font-weight: 800;
+            color: var(--light);
+            margin-bottom: 1rem;
+        }
+
+        .price-tag span {
+            font-size: 1.2rem;
+            color: var(--gray);
+            font-weight: 500;
+        }
+
+        .package-grid {
+            flex: 1.5;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+        }
+
+        .package-item {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .package-item i {
+            font-size: 1.5rem;
+            color: var(--primary);
+        }
+
+        .package-item h4 {
+            font-size: 1.1rem;
+        }
+
+        .package-item p {
+            font-size: 0.9rem;
+            color: var(--gray);
+        }
+
+        /* --- Profile Section --- */
+        .profile-section {
+            background: var(--dark);
+            border-radius: 50px 50px 0 0;
+        }
+
+        .profile-container {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            gap: 5rem;
+            align-items: center;
+        }
+
+        .profile-image-wrap {
+            position: relative;
+        }
+
+        .profile-image-wrap::before {
+            content: '';
+            position: absolute;
+            top: -20px;
+            left: -20px;
+            width: 100%;
+            height: 100%;
+            border: 2px solid var(--primary);
+            border-radius: 32px;
+            z-index: 0;
+        }
+
+        .profile-image {
+            width: 100%;
+            border-radius: 32px;
+            position: relative;
+            z-index: 1;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+        }
+
+        .profile-content blockquote {
+            font-size: 1.4rem;
+            font-style: italic;
+            color: var(--light);
+            margin-bottom: 2rem;
+            position: relative;
+            padding-left: 2rem;
+        }
+
+        .profile-content blockquote::before {
+            content: '“';
+            position: absolute;
+            left: 0;
+            top: -10px;
+            font-size: 4rem;
+            color: var(--primary);
+            opacity: 0.5;
+        }
+
+        /* --- FAQ Section --- */
+        .faq-item {
+            background: var(--glass);
+            border: 1px solid var(--glass-border);
+            border-radius: 16px;
+            margin-bottom: 1rem;
+            overflow: hidden;
+        }
+
+        .faq-question {
+            width: 100%;
+            padding: 1.5rem;
+            background: transparent;
+            border: none;
+            color: var(--light);
+            text-align: left;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .faq-answer {
+            padding: 0 1.5rem 1.5rem;
+            color: var(--gray);
+            display: none;
+        }
+
+        .faq-item.active .faq-answer {
+            display: block;
+        }
+
+        .faq-item.active .faq-question i {
+            transform: rotate(180deg);
+        }
+
+        /* --- Footer --- */
+        footer {
+            padding: 100px 0 50px;
+            background: var(--darker);
+            border-top: 1px solid var(--glass-border);
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 4rem;
+            margin-bottom: 4rem;
+        }
+
+        .footer-logo h2 {
+            font-size: 2rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+
+        .footer-contact h4 {
+            margin-bottom: 1.5rem;
+            color: var(--light);
+        }
+
+        .footer-contact p {
+            margin-bottom: 0.8rem;
+            color: var(--gray);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .footer-contact a {
+            color: var(--gray);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .footer-contact a:hover {
+            color: var(--primary);
+        }
+
+        .copyright {
+            text-align: center;
+            color: #475569;
+            font-size: 0.9rem;
+            padding-top: 3rem;
+            border-top: 1px solid rgba(255,255,255,0.05);
+        }
+
+        /* --- WhatsApp Floating Button --- */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 40px;
+            right: 40px;
+            width: 60px;
+            height: 60px;
+            background: #25d366;
+            color: white;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            box-shadow: 0 10px 25px rgba(37, 211, 102, 0.4);
+            z-index: 1000;
+            transition: var(--transition);
+            text-decoration: none;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.1) translateY(-5px);
+        }
+
+        /* --- Responsive --- */
+        @media (max-width: 992px) {
+            .featured-row {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            .profile-container {
+                grid-template-columns: 1fr;
+            }
+            .nav-links {
+                display: none;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 3rem;
+            }
+            .package-card {
+                padding: 2rem;
+            }
+            .hero-btns {
+                flex-direction: column;
+            }
+            .btn {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Floating WhatsApp -->
+    <a href="https://wa.me/34612459698?text=Hola%20Ismar%2C%20quiero%20organizar%20mi%20despedida%20en%20Cuba" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="container">
+            <a href="#" class="logo">ISMAR<span>VIP</span></a>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#paquete">Paquete VIP</a></li>
+                <li><a href="#sobre-mi">Sobre Mí</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+            <a href="https://wa.me/34612459698" class="nav-cta">RESERVAR AHORA</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+        <div class="hero-bg">
+            <img src="havana_hero.png" alt="La Habana Cuba Calle Realista">
+        </div>
+        <div class="container">
+            <div class="hero-content reveal">
+                <span class="hero-tag">Experiencias de Lujo en Cuba</span>
+                <h1>Tu Despedida de Soltero <br><span>Sin Límites</span></h1>
+                <p>Organizamos la experiencia definitiva en La Habana. Luz garantizada, logística impecable y el mejor ambiente de la isla, gestionado personalmente por Ismar.</p>
+                <div class="hero-btns">
+                    <a href="https://wa.me/34612459698" class="btn btn-primary">
+                        <i class="fab fa-whatsapp"></i> COTIZAR POR WHATSAPP
+                    </a>
+                    <a href="#servicios" class="btn btn-outline">VER SERVICIOS</a>
+                </div>
+                <div class="stats">
+                    <div class="stat-item">
+                        <h3>150+</h3>
+                        <p>Grupos VIP</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>8+</h3>
+                        <p>Años de Magia</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>100%</h3>
+                        <p>Satisfacción</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicios">
+        <div class="container">
+            <div class="section-title reveal">
+                <h2>Servicios Exclusivos</h2>
+                <p>No somos una agencia convencional. Somos tu contacto directo en el terreno para que nada falle.</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card reveal" style="animation-delay: 0.1s;">
+                    <div class="service-icon"><i class="fas fa-bolt"></i></div>
+                    <h3>Luz Garantizada</h3>
+                    <p>Contamos con villas y hostales con respaldo eléctrico propio. Aire acondicionado y música 24/7 sin interrupciones.</p>
+                </div>
+                <div class="service-card reveal" style="animation-delay: 0.2s;">
+                    <div class="service-icon"><i class="fas fa-bus"></i></div>
+                    <h3>Transporte Premium</h3>
+                    <p>Van moderna y climatizada a tu disposición. Chófer privado para traslados a playas, discotecas y tours.</p>
+                </div>
+                <div class="service-card reveal" style="animation-delay: 0.3s;">
+                    <div class="service-icon"><i class="fas fa-glass-cheers"></i></div>
+                    <h3>Fiestas VIP</h3>
+                    <p>Acceso a los clubes más exclusivos. Reservados, botellas y la mejor compañía para una noche inolvidable.</p>
+                </div>
+                <div class="service-card reveal" style="animation-delay: 0.4s;">
+                    <div class="service-icon"><i class="fas fa-utensils"></i></div>
+                    <h3>Cenas Gourmet</h3>
+                    <p>Selección de los mejores "Paladares" de La Habana. Langosta, mariscos y cocina criolla de alto nivel.</p>
+                </div>
+                <div class="service-card reveal" style="animation-delay: 0.5s;">
+                    <div class="service-icon"><i class="fas fa-shield-alt"></i></div>
+                    <h3>Logística Total</h3>
+                    <p>Ismar gestiona cada detalle. Seguridad, cambio de moneda, reservas y cualquier imprevisto en tiempo real.</p>
+                </div>
+                <div class="service-card reveal" style="animation-delay: 0.6s;">
+                    <div class="service-icon"><i class="fas fa-cocktail"></i></div>
+                    <h3>Barra Libre</h3>
+                    <p>Ron premium y cervezas frías siempre disponibles en el alojamiento. La fiesta no para nunca.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visual Showcase -->
+    <section class="showcase">
+        <div class="container">
+            <div class="featured-row reveal">
+                <div class="featured-img">
+                    <img src="party_cuba.png" alt="Fiesta en La Habana">
+                </div>
+                <div class="featured-text">
+                    <h3>La Habana de Noche</h3>
+                    <p>Vive la energía de la noche cubana en los lugares que solo los locales conocen. Sin colas, sin esperas, solo diversión al más alto nivel.</p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check-circle"></i> Reservados VIP en clubes</li>
+                        <li><i class="fas fa-check-circle"></i> Seguridad garantizada</li>
+                        <li><i class="fas fa-check-circle"></i> Transporte puerta a puerta</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="featured-row reveal">
+                <div class="featured-img">
+                    <img src="premium_transport.png" alt="Transporte VIP Cuba">
+                </div>
+                <div class="featured-text">
+                    <h3>Movilidad Sin Límites</h3>
+                    <p>Nuestros autobuses y vans están equipados con el máximo confort. Aire acondicionado potente para el calor del Caribe y conductores profesionales.</p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check-circle"></i> Vans modernas y limpias</li>
+                        <li><i class="fas fa-check-circle"></i> Disponibilidad 24 horas</li>
+                        <li><i class="fas fa-check-circle"></i> Traslados a Varadero y Playas</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="featured-row reveal">
+                <div class="featured-img">
+                    <img src="luxury_villa.png" alt="Villa de Lujo en Cuba">
+                </div>
+                <div class="featured-text">
+                    <h3>Tu Mansión Privada</h3>
+                    <p>Alojamiento en villas coloniales restauradas o casas modernas con piscina. El refugio perfecto para descansar después de la fiesta.</p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check-circle"></i> Piscinas privadas</li>
+                        <li><i class="fas fa-check-circle"></i> Habitaciones con A/C</li>
+                        <li><i class="fas fa-check-circle"></i> Staff de servicio incluido</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="featured-row reveal">
+                <div class="featured-img">
+                    <img src="gourmet_dinner.png" alt="Cena Gourmet en Paladar Cubano">
+                </div>
+                <div class="featured-text">
+                    <h3>Gastronomía de Autor</h3>
+                    <p>Disfruta de cenas exclusivas en los paladares más prestigiosos. Productos frescos, recetas tradicionales con un toque moderno y ambiente inigualable.</p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check-circle"></i> Langosta y mariscos frescos</li>
+                        <li><i class="fas fa-check-circle"></i> Selección de rones añejos</li>
+                        <li><i class="fas fa-check-circle"></i> Entorno colonial elegante</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Package Section -->
+    <section class="package-section" id="paquete">
+        <div class="container">
+            <div class="section-title reveal">
+                <h2>Paquete Resiliencia VIP</h2>
+                <p>Todo lo que necesitas para una despedida de soltero legendaria en tierra cubana.</p>
+            </div>
+
+            <div class="package-card reveal">
+                <div class="package-info">
+                    <div class="price-tag">$150 <span>/ día / persona</span></div>
+                    <h3>All-Inclusive Experience</h3>
+                    <p>Tú pones los vuelos, nosotros nos encargamos del resto. Transparencia total y sin cargos ocultos.</p>
+                    <a href="https://wa.me/34612459698" class="btn btn-primary" style="margin-top: 2rem;">RESERVAR ESTE PAQUETE</a>
+                </div>
+                <div class="package-grid">
+                    <div class="package-item">
+                        <i class="fas fa-hotel"></i>
+                        <h4>Alojamiento Pro</h4>
+                        <p>Villas premium con respaldo eléctrico.</p>
+                    </div>
+                    <div class="package-item">
+                        <i class="fas fa-car"></i>
+                        <h4>Van Privada</h4>
+                        <p>Transporte climatizado 24/7 con chófer.</p>
+                    </div>
+                    <div class="package-item">
+                        <i class="fas fa-utensils"></i>
+                        <h4>Comida Selecta</h4>
+                        <p>Desayunos y cenas en los mejores paladares.</p>
+                    </div>
+                    <div class="package-item">
+                        <i class="fas fa-beer"></i>
+                        <h4>Barra Libre</h4>
+                        <p>Cervezas y ron premium en la villa.</p>
+                    </div>
+                    <div class="package-item">
+                        <i class="fas fa-star"></i>
+                        <h4>Logística Ismar</h4>
+                        <p>Coordinación total y acceso a eventos.</p>
+                    </div>
+                    <div class="package-item">
+                        <i class="fas fa-map-marked-alt"></i>
+                        <h4>Tours Privados</h4>
+                        <p>Descubre la Cuba real y la turística.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="sobre-mi" class="profile-section">
+        <div class="container">
+            <div class="profile-container">
+                <div class="profile-image-wrap reveal">
+                    <img src="Foto%20Perfil.jpg" alt="Ismar - Organizador VIP Cuba" class="profile-image">
+                </div>
+                <div class="profile-content reveal">
+                    <h2>Tu Anfitrión: <span>Ismar</span></h2>
+                    <blockquote>
+                        "Llevo años moviendo grupos por Cuba. Mi compromiso no es solo venderte un viaje, sino garantizarte que nada falle. En Cuba, los contactos lo son todo, y yo los tengo."
+                    </blockquote>
+                    <p>Organizar una despedida en Cuba requiere experiencia y agilidad. Mi trabajo es que tú y tus amigos solo tengáis que preocuparos de disfrutar. Desde que aterrizáis hasta que despegáis, estoy a vuestra disposición para asegurar que cada detalle sea perfecto.</p>
+                    <p style="margin-top: 1.5rem;">Hablamos por WhatsApp y diseñamos el itinerario a vuestra medida. Transparencia, seguridad y fiesta garantizada.</p>
+                    <div class="hero-btns" style="margin-top: 2rem;">
+                        <a href="https://wa.me/34612459698" class="btn btn-primary">HABLAR CON ISMAR</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq">
+        <div class="container">
+            <div class="section-title reveal">
+                <h2>Dudas Frecuentes</h2>
+            </div>
+            <div class="faq-container reveal" style="max-width: 800px; margin: 0 auto;">
+                <div class="faq-item">
+                    <button class="faq-question">¿Es seguro el viaje? <i class="fas fa-chevron-down"></i></button>
+                    <div class="faq-answer">Totalmente. Nos movemos en entornos privados y seguros. Ismar acompaña al grupo y gestiona la seguridad en todo momento.</div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">¿Qué pasa si hay cortes de luz? <i class="fas fa-chevron-down"></i></button>
+                    <div class="faq-answer">Nuestros alojamientos están seleccionados precisamente por tener sistemas de respaldo eléctrico. No os faltará A/C ni energía.</div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">¿Cómo se gestiona el pago? <i class="fas fa-chevron-down"></i></button>
+                    <div class="faq-answer">Directo y transparente. Se acuerda el presupuesto, se realiza un depósito de reserva y el resto se liquida según lo acordado. Sin intermediarios.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-logo">
+                    <h2>ISMAR<span>VIP</span></h2>
+                    <p>La experiencia definitiva de despedida de soltero en el Caribe.</p>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contacto Directo</h4>
+                    <p><i class="fab fa-whatsapp"></i> <a href="tel:+34612459698">+34 612 459 698</a></p>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:ismar@empat-ia.net">ismar@empat-ia.net</a></p>
+                </div>
+                <div class="footer-contact">
+                    <h4>Operaciones</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Madrid & La Habana</p>
+                    <p><i class="fas fa-globe"></i> Especialistas en Mercado Mexicano & Español</p>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2026 Ismar VIP Cuba. Todos los derechos reservados. | Diseño Premium by Antigravity
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+
+        // FAQ Accordion
+        document.querySelectorAll('.faq-question').forEach(button => {
+            button.addEventListener('click', () => {
+                const item = button.parentElement;
+                item.classList.toggle('active');
+            });
+        });
+
+        // Reveal on scroll (simple implementation)
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('reveal');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    </script>
+</body>
+</html>
